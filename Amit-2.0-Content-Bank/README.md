@@ -81,3 +81,6 @@ Weighted score = sum(score/5 × weight). Penalise unsupported claims, poor audie
 ## Starter researched ideas
 
 See [IDEA-BANK.csv](./IDEA-BANK.csv). Starter seeds are hypotheses to research, not all 40 are fully validated. Add sources before making factual or trend claims.
+
+
+**Research status:** the CSV currently contains 40 idea-bank entries, but most are starter seeds marked research needed. Only use the label 'researched' once each idea has supporting evidence and a recorded research date.

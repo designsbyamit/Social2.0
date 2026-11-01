@@ -22,6 +22,22 @@ const presets={
   ["STEP 03","Design options, not just screens."],
   ["STEP 04","Demonstrate what changed."],
   ["CTA","Try the 4D loop on your next brief."]
+ ],
+ week01-quality:[
+  ["HOOK","AI made UX work faster. Is it making it better?"],
+  ["RESEARCH","NN/g surveyed 521 UX practitioners."],
+  ["SIGNAL 01","54% cite AI output quality as a barrier."],
+  ["SIGNAL 02","50% cite privacy and security."],
+  ["TAKEAWAY","Measure better work, not just faster work."],
+  ["CTA","Where do you still not trust AI output?"]
+ ],
+ week01-career:[
+  ["HOOK","AI UX Designer roles grew 145%. What does that mean?"],
+  ["CONTEXT","Autodesk report: Design & Make industries."],
+  ["SKILL 01","Design judgement."],
+  ["SKILL 02","Technical fluency and workflow thinking."],
+  ["SKILL 03","Communication, collaboration and leadership."],
+  ["CTA","Learn the tools. Build the judgement."]
  ]
 };
 let frames=[];let timer=null;let current=0;let scale=100;

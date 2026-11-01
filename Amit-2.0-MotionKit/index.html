@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#191919">
+  <title>Amit 2.0 MotionKit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#">AMIT 2.0 <span>/ MOTIONKIT</span></a>
+    <span class="status"><i></i> LOCAL EDITOR</span>
+  </header>
+  <main class="layout">
+    <section class="intro">
+      <p class="eyebrow">SOCIAL CONTENT STUDIO / 001</p>
+      <h1>Make the idea<br><em>move.</em></h1>
+      <p class="sub">A small motion system for sharp, useful 20-second design ideas.</p>
+      <div class="controls">
+        <label>Template
+          <select id="template">
+            <option value="statement">Contrarian statement</option>
+            <option value="tips">3-5 quick tips</option>
+            <option value="framework">Mini framework</option>
+          </select>
+        </label>
+        <label>Accent
+          <select id="accent">
+            <option value="orange">Signal orange</option>
+            <option value="sage">Soft sage</option>
+            <option value="paper">Paper</option>
+          </select>
+        </label>
+        <label>Typeface scale
+          <input id="scale" type="range" min="70" max="125" value="100">
+        </label>
+      </div>
+      <div class="script-panel">
+        <div class="panel-head"><span>01 / SCRIPT FRAMES</span><button id="reset" class="text-button">Reset template</button></div>
+        <div id="frames" class="frames"></div>
+        <button id="addFrame" class="add-button">+ Add frame</button>
+        <div class="actions">
+          <button id="preview" class="primary">Preview animation ↗</button>
+          <button id="restart" class="secondary">Restart</button>
+        </div>
+        <p id="message" class="micro">Edit the frames, then preview your reel on the right.</p>
+      </div>
+    </section>
+    <section class="preview-column">
+      <div class="preview-label"><span>LIVE PREVIEW</span><span>9:16 / 1080 × 1920</span></div>
+      <div id="stage" class="stage">
+        <div class="stage-grid"></div>
+        <div class="stage-top"><span>AMIT 2.0</span><span id="counter">01 / 06</span></div>
+        <div id="stageCopy" class="stage-copy"><span class="kicker">DESIGN / FUTURE / WORK</span><h2>Your next<br>idea starts<br><em>here.</em></h2></div>
+        <div class="stage-bottom"><span>THINK. DESIGN. CONNECT.</span><span>SWIPE LESS / THINK MORE</span></div>
+      </div>
+      <div class="export-note"><strong>Export note</strong><p>This editor previews HTML/CSS animation. To upload to Instagram, record/render the preview as a 1080 × 1920 MP4 and verify timing, audio and safe areas.</p></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

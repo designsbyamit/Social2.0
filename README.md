@@ -8,7 +8,7 @@ A content creation and growth workspace for Amit 2.0's Instagram revival.
 - [Amit 2.0 MotionKit](./Amit-2.0-MotionKit/README.md): reusable HTML/CSS/JavaScript Reel generator.
 - [Social Viral Content Engine](./Social-Viral-Content-Engine/README.md): choose between backlog ideas and evidence-backed timely opportunities.
 
-## Social Viral Content Engine
+## This week's production pack\n\n- [Week 01 content pack (2-8 November 2026)](./Amit-2.0-Content-Bank/WEEK-01-CONTENT.md)\n- [Open Social Viral Content Engine prototype](./Amit-2.0-Content-Bank/engine/index.html)\n\n## Social Viral Content Engine
 The engine compares the existing idea bank with new trend candidates and audience signals using explainable scoring:
 - Audience relevance 25%
 - Timeliness / trend momentum 20%

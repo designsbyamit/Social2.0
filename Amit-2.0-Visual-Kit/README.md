@@ -1,62 +1,48 @@
 # Amit 2.0 Visual Kit
 
-Purpose: make high-quality Instagram content recognisable without redesigning every post.
+**Direction:** Editorial Brutalism + Warm Minimalism. Thoughtful, bold, useful and human.
 
-## Brand direction
-
-**Editorial Brutalism + Warm Minimalism**  
-Thoughtful, bold, useful, human, not corporate and not generic AI aesthetics.
-
-## Starter palette
-
-| Token | Hex | Use |
+## Design tokens
+| Token | Hex | Role |
 |---|---|---|
-| Ink | #191919 | Primary text / dark canvas |
-| Paper | #F3EFE5 | Main light background |
+| Ink | #191919 | Primary type / dark canvas |
+| Paper | #F3EFE5 | Main light canvas |
 | Signal | #E8753D | Accent / emphasis |
 | Stone | #A8A69B | Secondary information |
 | Sage | #D6DCB9 | Supporting accent |
 
 ## Typography
-
-- Display: bold editorial grotesk, high-impact headlines.
-- Body: highly legible sans-serif.
+- Bold editorial grotesk for display; highly legible sans-serif for body.
 - Maximum two font families per asset.
-- Avoid tiny text and long paragraphs.
-- Use consistent hierarchy, grid and safe areas.
+- Consistent grid, hierarchy, margins, safe areas and signature.
 
-## Instagram formats
+## Formats
+- Reels: 1080 × 1920, 9:16, 30fps, 15-20 sec.
+- Carousels: 1080 × 1350, 4:5, seven slides by default.
+- Stories: 1080 × 1920.
 
-- Reel: 1080 × 1920, 9:16, 30fps, 15-20 seconds.
-- Carousel: 1080 × 1350, 4:5, 7 slides by default.
-- Story: 1080 × 1920.
-
-## Reusable templates to build
-
-1. Kinetic statement Reel: disruptive hook → tension → insights → takeaway → CTA.
-2. 3-5 tips Reel: hook → sequential tips → summary → save/follow CTA.
+## Templates
+1. Kinetic statement Reel: hook → tension → insights → takeaway → CTA.
+2. Tips Reel: hook → sequential tips → summary → CTA.
 3. Mini-framework Reel: problem → model → steps → example → CTA.
-4. Seven-slide educational carousel: hook, context, three insights, checklist, CTA.
+4. Educational carousel: hook, context, three insights, checklist, CTA.
 5. Framework card: problem, framework, visual model, example, exercise.
-6. Design Clinic: challenge, diagnosis, what works, improvements, next action.
+6. Design Clinic: challenge, diagnosis, strengths, improvements, next action.
 
 ## Motion language
-
-- Strong typographic entrances and exits.
-- Short, intentional transitions.
-- Staggered reveal and scale/position changes.
-- Avoid excessive bounce, gratuitous gradients and random particles.
-- Maintain readable dwell time; never animate text faster than it can be read.
-- Subtitles / on-screen text must remain legible without audio.
+- Typographic entrances/exits, staggered reveals, restrained movement.
+- Adequate readable dwell time; understandable without sound.
+- Avoid gratuitous particles and excessive bounce.
+- Use licensed/original media only.
 
 ## Quality gate
+Hierarchy, contrast, safe areas, spelling, source accuracy, phone-size legibility, signature and export quality. Two revision cycles maximum.
 
-Before publishing check hierarchy, contrast, safe areas, spelling, source accuracy, readability at phone size, consistent signature and export quality.
+## Folder map
+- `tokens/` design tokens
+- `templates/reels/` motion templates
+- `templates/carousels/` slide templates
+- `references/` references and rationale
+- `exports/` export guidance
 
-## Asset structure
-
-- `templates/reels/`
-- `templates/carousels/`
-- `tokens/`
-- `references/`
-- `exports/`
+First sprint: formalise tokens, create carousel master and three Reel variants.

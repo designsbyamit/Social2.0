@@ -23,7 +23,7 @@ const presets={
   ["STEP 04","Demonstrate what changed."],
   ["CTA","Try the 4D loop on your next brief."]
  ],
- week01-quality:[
+ "week01-quality":[
   ["HOOK","AI made UX work faster. Is it making it better?"],
   ["RESEARCH","NN/g surveyed 521 UX practitioners."],
   ["SIGNAL 01","54% cite AI output quality as a barrier."],
@@ -31,7 +31,7 @@ const presets={
   ["TAKEAWAY","Measure better work, not just faster work."],
   ["CTA","Where do you still not trust AI output?"]
  ],
- week01-career:[
+ "week01-career":[
   ["HOOK","AI UX Designer roles grew 145%. What does that mean?"],
   ["CONTEXT","Autodesk report: Design & Make industries."],
   ["SKILL 01","Design judgement."],

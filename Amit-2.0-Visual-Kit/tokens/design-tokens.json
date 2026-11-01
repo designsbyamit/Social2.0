@@ -36,16 +36,13 @@
       "aspectRatio": "9:16"
     }
   },
-  "motion": {
-    "principles": [
-      "typographic entrances and exits",
-      "staggered reveals",
-      "restrained scale and position transitions",
-      "readable dwell time",
-      "no gratuitous particles",
-      "legible without sound"
-    ]
-  },
+  "motion": [
+    "typographic entrances and exits",
+    "staggered reveals",
+    "restrained transitions",
+    "readable dwell time",
+    "legible without sound"
+  ],
   "qualityGate": [
     "hierarchy",
     "contrast",

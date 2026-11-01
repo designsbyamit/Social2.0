@@ -1,32 +1,11 @@
-# Social Viral Content Engine - Prototype
+# Social Viral Content Engine - MVP
 
-Open `index.html` through GitHub Pages or a local web server. It imports the 40 seeded topics from the parent Content Bank's `IDEA-BANK.csv`.
+A local-first editorial decision tool to choose the next Instagram post.
 
-## What works in this first prototype
+Current prototype: ranks supplied idea records, filters by audience/franchise/format, shows hook options, audience problem and effort. It discloses when trend feed is not connected.
 
-- Imports and ranks the current idea bank.
-- Filters backlog versus manually added trend candidates.
-- Scores each candidate using the defined weighted model.
-- Displays source freshness and evidence confidence separately.
-- Allows manual trend candidate entry with source URL, source date and notes.
-- Exports the top 15 as CSV.
-- Emits a browser `idea-selected` event for future integration with a sprint board.
+Live trend discovery is not active until a permitted provider is configured. It must not invent current topics, volume or viral signals.
 
-## What is not connected yet
+Run: open index.html in a modern browser and import CSV using the file picker. No build step required.
 
-- No automatic live trend discovery.
-- No Instagram Insights integration.
-- No persistent database; manually entered candidates are held in browser memory for this session.
-- No automatic Notion sync.
-
-These are deliberate boundaries: the tool must never imply a topic is trending or viral without fresh evidence.
-
-## Next implementation steps
-
-1. Add a backend/serverless endpoint for approved trend providers.
-2. Store candidate records and evidence snapshots.
-3. Add daily/weekly trend refresh with rate limits and source attribution.
-4. Add Notion Content & Production Board sync.
-5. Add performance feedback import from Instagram insights.
-6. Add duplicate detection and recently-published topic penalty.
-7. Add editorial decision log (picked, skipped, reason).
+Next: robust CSV validation, persist manual scores/selections, add source-backed trend adapter with dates/confidence, ingest account performance exports. Keep secrets server-side.

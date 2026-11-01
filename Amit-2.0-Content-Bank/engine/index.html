@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Social Viral Content Engine | Amit 2.0</title>
+<style>
+:root{--ink:#191919;--paper:#f3efe5;--orange:#e8753d;--stone:#a8a69b;--sage:#d6dcb9;font-family:Inter,Arial,sans-serif}*{box-sizing:border-box}body{margin:0;background:#e9e5dc;color:var(--ink)}header{background:var(--ink);color:var(--paper);padding:18px 5vw;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.12em;font-weight:800}main{max-width:1200px;margin:auto;padding:42px 5vw}.eyebrow{font-size:10px;letter-spacing:.15em;font-weight:800;color:#777}h1{font-size:clamp(40px,6vw,72px);letter-spacing:-.07em;line-height:.94;margin:15px 0}h1 em{font-style:normal;color:var(--orange)}.lead{max-width:720px;color:#67645d;line-height:1.6}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}.toolbar input,.toolbar select{padding:12px;border:1px solid #ccc4b8;background:#faf8f2;border-radius:4px;font:inherit}.toolbar input{flex:1;min-width:220px}.toolbar button,button{padding:12px 16px;border:0;background:var(--ink);color:var(--paper);border-radius:4px;font-weight:700;cursor:pointer}.toolbar .secondary{background:#d8d2c7;color:var(--ink)}.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.panel{background:#f7f3eb;border:1px solid #d7d0c5;border-radius:8px;padding:20px}.panel h2{font-size:17px;margin:0 0 14px}.metric{font-size:30px;font-weight:900}.muted{color:#777;font-size:12px;line-height:1.5}.candidate{border:1px solid #ddd5c9;background:#fffdf8;padding:15px;margin:10px 0;border-radius:6px}.candidate-top{display:flex;justify-content:space-between;gap:12px}.score{font-size:24px;font-weight:900;color:#b9572d}.tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.tag{font-size:10px;padding:4px 7px;background:#eee8dd;border-radius:20px}.candidate p{font-size:13px;line-height:1.5}.candidate button{font-size:11px;padding:8px 10px}.candidate button.saved{background:#59725b}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form-grid label{font-size:11px;font-weight:700;display:flex;flex-direction:column;gap:5px}.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:9px;border:1px solid #d3cbbf;background:white;border-radius:4px;font:inherit}.form-grid textarea{min-height:65px;grid-column:1/-1}.weights{display:grid;gap:7px;margin:12px 0}.weight{display:grid;grid-template-columns:1fr 45px;gap:8px;align-items:center;font-size:11px}.weight input{width:100%}.foot{font-size:11px;color:#777;margin-top:25px;line-height:1.6}.notice{padding:12px;background:#eee7d9;border-left:3px solid var(--orange);font-size:12px;line-height:1.5;margin:12px 0}.empty{padding:30px;text-align:center;color:#777;font-size:13px}@media(max-width:850px){.layout{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><span>AMIT 2.0 / SOCIAL VIRAL CONTENT ENGINE</span><span>EDITORIAL DECISION SUPPORT</span></header>
+<main>
+<p class="eyebrow">SIGNAL SCOUT / EDITION 001</p>
+<h1>Pick the idea.<br><em>Earn the attention.</em></h1>
+<p class="lead">Rank your researched ideas against timely topics. The engine prioritises young designers' needs, usefulness and your distinct point of view - not trend noise.</p>
+<div class="toolbar">
+<input id="search" placeholder="Search ideas, audience problems or hooks...">
+<select id="filter"><option value="all">All candidates</option><option>Backlog</option><option>Trend watch</option></select>
+<button id="rank">Rank ideas</button><button class="secondary" id="download">Export shortlist CSV</button>
+</div>
+<div class="layout">
+<section class="panel">
+<h2>Recommended next picks</h2><p class="muted">Scores are editorial prioritisation estimates, not predictions of virality. A human editor makes the final selection.</p>
+<div id="results"><div class="empty">Loading your idea bank…</div></div>
+</section>
+<aside>
+<section class="panel">
+<h2>Add a new trend candidate</h2>
+<p class="muted">Record a topic only after checking a current source. The prototype does not pretend to fetch live trend data.</p>
+<div class="notice">Trend data status: <strong>Manual source entry required.</strong> Connect an approved trend or social-listening provider before calling any trend current or viral.</div>
+<div class="form-grid">
+<label>Topic title<input id="newTitle" placeholder="e.g. New AI design workflow"></label>
+<label>Trend evidence<select id="trendType"><option value="0">No verified trend signal</option><option value="2">Emerging discussion</option><option value="3">Recent product/research launch</option><option value="4">Strong current evidence</option><option value="5">Multiple corroborating signals</option></select></label>
+<label>Audience problem<input id="newProblem" placeholder="What is the designer struggling with?"></label>
+<label>Audience<select id="newAudience"><option>0-2 years</option><option>2-5 years</option><option>5-10+ years</option><option>0-5 years</option></select></label>
+<label>Source URL<input id="sourceUrl" placeholder="https://..."></label>
+<label>Source date<input id="sourceDate" type="date"></label>
+<label>Franchise<select id="newFranchise"><option>AI x Design Lab</option><option>Designer, Decode This</option><option>The Design Gym</option><option>From My Design Diary</option><option>The Design Clinic</option><option>The Creative Shelf</option></select></label>
+<label>Preferred format<select id="newFormat"><option>Reel</option><option>Carousel</option><option>Collab</option><option>Story</option></select></label>
+<label>Effort (minutes)<input id="newEffort" type="number" value="45" min="10"></label>
+<label>Original point of view<input id="newPOV" placeholder="What can Amit uniquely add?"></label>
+<label>Evidence notes<textarea id="evidence" placeholder="What does the source actually support?"></textarea></label>
+<button id="addTrend" style="grid-column:1/-1">Add candidate to ranking</button>
+</div>
+</section>
+<section class="panel" style="margin-top:20px">
+<h2>Scoring model</h2>
+<div class="weights" id="weights"></div>
+<p class="muted">Weighted score out of 100: relevance 25%, timeliness 20%, utility 15%, shareability 15%, original POV 10%, credibility 10%, production feasibility 5%. Each input is scored 0-5.</p>
+</section>
+</aside>
+</div>
+<p class="foot">Amit 2.0 Content Intelligence · Keep source URLs and observation dates. Stale or unsourced trends must not be described as current. The included 40 ideas are starting hypotheses; research and validate each before publishing factual claims.</p>
+</main>
+<script src="engine.js"></script>
+</body></html>

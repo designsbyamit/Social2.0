@@ -14,7 +14,7 @@ A lightweight, reusable generator for 15-20 second Instagram Reels. Built for mi
 ## Visual defaults
 Ink #191919, Paper #F3EFE5, Signal #E8753D, Stone #A8A69B, Sage #D6DCB9.
 
-## How to run
+## Week 01 presets\n\nThe editor includes two ready-to-edit scripts: AI work quality (Monday 2 November) and AI UX career skills (Friday 6 November). Select them in the Template menu, then edit the frame copy and preview.\n\n## How to run
 Open `index.html` in a modern browser. No build step or dependencies.
 
 ## Important

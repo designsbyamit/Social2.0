@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-11-01",
+  "note": "Source-backed research, product and career signals. These are not verified social-platform virality trends. Scores are editorial estimates for Amit's audience, not measured search volume or engagement forecasts.",
+  "candidates": [
+    {
+      "id": "TR-001",
+      "title": "AI makes UX work faster. Is it making it better?",
+      "audience_segment": "0-5",
+      "audience_problem": "Designers face pressure to use AI, but still need to evaluate output quality, privacy and downstream cleanup.",
+      "franchise": "Designer, Decode This",
+      "format": "Reel",
+      "hooks": [
+        "AI made UX work faster. Is it making it better?",
+        "The hidden cost of AI productivity is verification.",
+        "Measure better work, not just faster work."
+      ],
+      "source_name": "Nielsen Norman Group",
+      "source_url": "https://www.nngroup.com/articles/ai-in-ux-survey-26/",
+      "published_at": "2026-10-23",
+      "checked_at": "2026-11-01",
+      "signal_type": "Practitioner survey",
+      "evidence_confidence": "High",
+      "evidence_summary": "Survey of 521 working UX practitioners. 54% named output quality and 50% data privacy/security as AI adoption barriers; 66% used at least one agentic AI tool. Convenience sample, not a census.",
+      "scores": {
+        "relevance": 5,
+        "timeliness": 4,
+        "utility": 5,
+        "shareability": 5,
+        "originality": 5,
+        "credibility": 5,
+        "feasibility": 5
+      },
+      "freshness": "Recent"
+    },
+    {
+      "id": "TR-002",
+      "title": "Design files are becoming context for AI agents",
+      "audience_segment": "2-5;5-10+",
+      "audience_problem": "Designers need to make intent, constraints, patterns and quality expectations legible to agents as well as teammates.",
+      "franchise": "AI x Design Lab",
+      "format": "Carousel",
+      "hooks": [
+        "Your design file is becoming context for AI agents.",
+        "The next design-system user might be an agent.",
+        "Can your design system guide an agent without you?"
+      ],
+      "source_name": "Figma Product Updates",
+      "source_url": "https://www.figma.com/release-notes/",
+      "published_at": "2026-10-15",
+      "checked_at": "2026-11-01",
+      "signal_type": "Product release",
+      "evidence_confidence": "High",
+      "evidence_summary": "Figma's October 15 updates include code-backed layers, Specs for written context, code sources and guidelines to help agents work with real design systems.",
+      "scores": {
+        "relevance": 5,
+        "timeliness": 4,
+        "utility": 5,
+        "shareability": 4,
+        "originality": 5,
+        "credibility": 5,
+        "feasibility": 4
+      },
+      "freshness": "Recent"
+    },
+    {
+      "id": "TR-003",
+      "title": "AI UX Designer is an emerging role to watch",
+      "audience_segment": "0-2;2-5",
+      "audience_problem": "Early-career designers need to understand emerging AI-related design roles and the skills behind them.",
+      "franchise": "Designer, Decode This",
+      "format": "Reel",
+      "hooks": [
+        "AI UX Designer roles grew 145%. What does that actually mean?",
+        "AI UX is not just prompt writing.",
+        "Build the judgement behind the tools."
+      ],
+      "source_name": "Autodesk 2026 AI Jobs Report",
+      "source_url": "https://adsknews.autodesk.com/en/news/2026-ai-jobs-report/",
+      "published_at": "2026-07-13",
+      "checked_at": "2026-11-01",
+      "signal_type": "Job-listing research",
+      "evidence_confidence": "Medium",
+      "evidence_summary": "AI UX Designer was a new entry with 145% year-over-year growth in Autodesk's Design and Make industries analysis. The figure is not representative of all UX hiring or all geographies.",
+      "scores": {
+        "relevance": 5,
+        "timeliness": 2,
+        "utility": 5,
+        "shareability": 5,
+        "originality": 4,
+        "credibility": 4,
+        "feasibility": 5
+      },
+      "freshness": "Stale - useful structural signal, not breaking news"
+    }
+  ]
+}

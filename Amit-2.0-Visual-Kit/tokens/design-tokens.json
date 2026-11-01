@@ -1,0 +1,60 @@
+{
+  "name": "Amit 2.0 Visual System",
+  "direction": "Editorial Brutalism + Warm Minimalism",
+  "colors": {
+    "ink": "#191919",
+    "paper": "#F3EFE5",
+    "signal": "#E8753D",
+    "stone": "#A8A69B",
+    "sage": "#D6DCB9"
+  },
+  "typography": {
+    "display": "Bold editorial grotesk",
+    "body": "Legible sans-serif",
+    "maxFamiliesPerAsset": 2
+  },
+  "formats": {
+    "reel": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "aspectRatio": "9:16",
+      "durationSeconds": [
+        15,
+        20
+      ]
+    },
+    "carousel": {
+      "width": 1080,
+      "height": 1350,
+      "aspectRatio": "4:5",
+      "defaultSlides": 7
+    },
+    "story": {
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9:16"
+    }
+  },
+  "motion": {
+    "principles": [
+      "typographic entrances and exits",
+      "staggered reveals",
+      "restrained scale and position transitions",
+      "readable dwell time",
+      "no gratuitous particles",
+      "legible without sound"
+    ]
+  },
+  "qualityGate": [
+    "hierarchy",
+    "contrast",
+    "safe areas",
+    "spelling",
+    "source accuracy",
+    "phone-size readability",
+    "consistent signature",
+    "export quality"
+  ],
+  "revisionLimit": 2
+}

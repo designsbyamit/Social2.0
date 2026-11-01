@@ -40,7 +40,7 @@ Each idea should capture:
 - Status and publish date
 - Performance after 24h and 7d
 
-## Social Viral Content Engine
+## Current production week\n\n- [Week 01 content pack - 2 to 8 November 2026](./WEEK-01-CONTENT.md)\n- [Open the Social Viral Content Engine prototype](./engine/index.html)\n\n## Social Viral Content Engine
 
 See [ENGINE.md](./ENGINE.md) and run the local prototype at [engine/](./engine/).
 

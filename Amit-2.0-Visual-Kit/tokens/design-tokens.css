@@ -1,0 +1,126 @@
+/* Amit 2.0 Visual System
+   Direction: Editorial Brutalism + Warm Minimalism
+   Version: 1.0.0
+*/
+:root {
+  /* Brand palette */
+  --am-color-ink: #191919;
+  --am-color-paper: #F3EFE5;
+  --am-color-signal: #E8753D;
+  --am-color-stone: #A8A69B;
+  --am-color-sage: #D6DCB9;
+
+  /* Semantic surfaces */
+  --am-bg-primary: var(--am-color-paper);
+  --am-bg-inverse: var(--am-color-ink);
+  --am-bg-accent: var(--am-color-signal);
+  --am-bg-soft: var(--am-color-sage);
+  --am-bg-muted: #E8E3D8;
+  --am-text-primary: var(--am-color-ink);
+  --am-text-inverse: var(--am-color-paper);
+  --am-text-secondary: #66645E;
+  --am-text-muted: #77756D;
+  --am-border: rgba(25, 25, 25, .22);
+  --am-border-strong: var(--am-color-ink);
+
+  /* Typography */
+  --am-font-display: "Space Grotesk", "Arial", sans-serif;
+  --am-font-body: "DM Sans", "Arial", sans-serif;
+  --am-font-editorial: "Newsreader", Georgia, serif;
+  --am-type-xs: .72rem;
+  --am-type-sm: .86rem;
+  --am-type-md: 1rem;
+  --am-type-lg: 1.25rem;
+  --am-type-xl: clamp(1.6rem, 3vw, 2.5rem);
+  --am-type-display: clamp(3rem, 8vw, 7.5rem);
+  --am-leading-tight: .92;
+  --am-leading-heading: 1.04;
+  --am-leading-body: 1.48;
+  --am-tracking-tight: -.055em;
+  --am-tracking-label: .12em;
+
+  /* Spacing: 4px base */
+  --am-space-1: 4px;
+  --am-space-2: 8px;
+  --am-space-3: 12px;
+  --am-space-4: 16px;
+  --am-space-5: 20px;
+  --am-space-6: 24px;
+  --am-space-8: 32px;
+  --am-space-10: 40px;
+  --am-space-12: 48px;
+  --am-space-16: 64px;
+  --am-space-20: 80px;
+  --am-space-24: 96px;
+
+  /* Layout */
+  --am-content-max: 1200px;
+  --am-grid-columns: 12;
+  --am-grid-gutter: 24px;
+  --am-page-gutter: clamp(20px, 5vw, 72px);
+  --am-social-gutter: 8.3%;
+  --am-social-safe-top: 8%;
+  --am-social-safe-bottom: 10%;
+
+  /* Shape and line */
+  --am-radius-none: 0;
+  --am-radius-sm: 3px;
+  --am-radius-md: 8px;
+  --am-radius-pill: 999px;
+  --am-line-thin: 1px;
+  --am-line-bold: 2px;
+
+  /* Motion */
+  --am-motion-fast: 140ms;
+  --am-motion-base: 240ms;
+  --am-motion-slow: 480ms;
+  --am-ease-standard: cubic-bezier(.2, .7, .2, 1);
+  --am-ease-enter: cubic-bezier(.16, 1, .3, 1);
+
+  /* Elevation */
+  --am-shadow-card: 0 12px 32px rgba(25, 25, 25, .08);
+}
+
+/* Core reset and shared defaults */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--am-bg-primary);
+  color: var(--am-text-primary);
+  font-family: var(--am-font-body);
+  font-size: var(--am-type-md);
+  line-height: var(--am-leading-body);
+  -webkit-font-smoothing: antialiased;
+}
+button, a { font: inherit; }
+::selection { background: var(--am-color-signal); color: var(--am-color-ink); }
+
+.am-display {
+  font-family: var(--am-font-display);
+  font-weight: 700;
+  letter-spacing: var(--am-tracking-tight);
+  line-height: var(--am-leading-tight);
+}
+.am-editorial { font-family: var(--am-font-editorial); font-style: italic; }
+.am-eyebrow {
+  font-size: var(--am-type-xs);
+  font-weight: 700;
+  letter-spacing: var(--am-tracking-label);
+  text-transform: uppercase;
+}
+.am-rule { height: 1px; border: 0; background: var(--am-border); }
+.am-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border: 1px solid currentColor;
+  border-radius: var(--am-radius-none);
+  font-size: var(--am-type-xs);
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amit 2.0 visual system: design tokens, typography, layout and social content patterns.">
+  <title>Amit 2.0 - Visual System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens/design-tokens.css">
+  <style>
+    .guide{max-width:var(--am-content-max);margin:auto;padding:48px var(--am-page-gutter) 100px}
+    .top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--am-border);padding-bottom:18px}
+    .mark{font:700 13px var(--am-font-display);letter-spacing:.12em}
+    .version{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--am-text-muted)}
+    .hero{padding:clamp(70px,12vw,150px) 0 90px;max-width:1000px}
+    .hero h1{font:700 clamp(64px,12vw,150px)/.84 var(--am-font-display);letter-spacing:-.075em;margin:26px 0}
+    .hero h1 em{font:italic 400 .9em var(--am-font-editorial);letter-spacing:-.06em}
+    .hero p{font-size:clamp(17px,2vw,22px);max-width:540px;color:var(--am-text-secondary)}
+    .section{padding:58px 0;border-top:1px solid var(--am-border)}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:baseline;margin-bottom:28px}
+    h2{font:600 30px var(--am-font-display);letter-spacing:-.04em;margin:0}
+    .index{font-size:12px;color:var(--am-text-muted);letter-spacing:.12em}
+    .swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+    .swatch{min-width:0}
+    .swatch-color{height:130px;border:1px solid var(--am-border);margin-bottom:12px}
+    .swatch strong,.swatch code{display:block;font-size:12px}
+    .swatch code{color:var(--am-text-muted);margin-top:3px}
+    .type-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .type-card{background:var(--am-bg-muted);padding:26px;min-height:190px}
+    .type-card small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px}
+    .type-card .sample{font-size:clamp(28px,4vw,52px);line-height:.98;letter-spacing:-.06em}
+    .layout-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .layout-card{border:1px solid var(--am-border);padding:14px}
+    .frame{aspect-ratio:4/5;background:var(--am-color-paper);border:1px solid var(--am-border);padding:8%;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+    .frame.dark{background:var(--am-color-ink);color:var(--am-color-paper)}
+    .frame .mini{font-size:8px;letter-spacing:.12em;text-transform:uppercase}
+    .frame h3{font:700 clamp(19px,3vw,34px)/.92 var(--am-font-display);letter-spacing:-.06em;margin:0}
+    .frame h3 em{font:italic 400 1em var(--am-font-editorial)}
+    .frame .accent{color:var(--am-color-signal)}
+    .frame .foot{display:flex;justify-content:space-between;font-size:8px;letter-spacing:.1em;text-transform:uppercase;border-top:1px solid currentColor;padding-top:8px}
+    .layout-card p{font-size:13px;color:var(--am-text-secondary);margin:12px 0 0}
+    .principles{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px}
+    .principle{padding:18px 0;border-top:1px solid var(--am-border);display:flex;gap:16px}
+    .principle b{font:600 13px var(--am-font-display);color:var(--am-color-signal)}
+    .principle span{font-size:14px}
+    .footer{display:flex;justify-content:space-between;padding-top:24px;border-top:1px solid var(--am-border);font-size:11px;color:var(--am-text-muted);letter-spacing:.08em;text-transform:uppercase}
+    @media(max-width:680px){.swatches{grid-template-columns:repeat(2,1fr)}.type-grid,.layout-grid,.principles{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.hero{padding:75px 0}.guide{padding-top:24px}}
+  </style>
+</head>
+<body>
+<main class="guide">
+  <header class="top"><div class="mark">AMIT 2.0 / VISUAL SYSTEM</div><div class="version">Design language · v1.0</div></header>
+  <section class="hero">
+    <div class="am-eyebrow">A visual language for ideas that matter</div>
+    <h1 class="am-display">Clear<br>thinking.<br><em>Distinct</em> design.</h1>
+    <p>Editorial minimalism with a little creative tension. A consistent visual language for sharing ideas on design, technology, careers and the future of creative work.</p>
+    <span class="am-tag">Editorial brutalism + warm minimalism</span>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>01 / Colour system</h2><span class="index">Five core colours</span></div>
+    <div class="swatches">
+      <div class="swatch"><div class="swatch-color" style="background:#191919"></div><strong>Ink</strong><code>#191919</code></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F3EFE5"></div><strong>Paper</strong><code>#F3EFE5</code></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E8753D"></div><strong>Signal</strong><code>#E8753D</code></div>
+      <div class="swatch"><div class="swatch-color" style="background:#A8A69B"></div><strong>Stone</strong><code>#A8A69B</code></div>
+      <div class="swatch"><div class="swatch-color" style="background:#D6DCB9"></div><strong>Sage</strong><code>#D6DCB9</code></div>
+    </div>
+    <p>Paper and Ink do the heavy lifting. Signal marks the important moment. Sage and Stone support, never compete.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>02 / Typography</h2><span class="index">Three roles, one hierarchy</span></div>
+    <div class="type-grid">
+      <div class="type-card"><small>Display / Space Grotesk</small><div class="sample am-display">Make the<br>thinking visible.</div></div>
+      <div class="type-card"><small>Editorial / Newsreader</small><div class="sample am-editorial">A different point of view.</div></div>
+      <div class="type-card"><small>Body / DM Sans</small><div style="font-size:16px;max-width:330px">Use plain language. Keep the idea sharp. Give every line a reason to be there.</div></div>
+      <div class="type-card"><small>Labels / DM Sans Bold</small><div class="am-eyebrow" style="font-size:14px">Field notes / 02.01 / AI × UX</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>03 / Content layouts</h2><span class="index">A system, not a template prison</span></div>
+    <div class="layout-grid">
+      <div class="layout-card"><div class="frame"><div class="mini">AI Designer Playbook / 01</div><h3>Stop collecting AI tools.<br><span class="accent">Start building</span> workflows.</h3><div class="foot"><span>Amit 2.0</span><span>01 / 08</span></div></div><p><b>Statement cover</b><br>Strong claim, high contrast, one idea.</p></div>
+      <div class="layout-card"><div class="frame dark"><div class="mini">Design craft / Field note 04</div><h3>A polished screen isn't always <em>good design.</em></h3><div class="foot"><span>Amit 2.0</span><span>02 / 08</span></div></div><p><b>Editorial contrast</b><br>Dark canvas for reflection and tension.</p></div>
+      <div class="layout-card"><div class="frame"><div class="mini">The designer's dilemma</div><h3>Good design starts with a better <span class="accent">question.</span></h3><div style="background:#D6DCB9;padding:12px;font-size:10px">What problem are we actually solving?</div><div class="foot"><span>Amit 2.0</span><span>03 / 08</span></div></div><p><b>Prompt / framework</b><br>Use Sage for models, exercises and takeaways.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>04 / Design principles</h2><span class="index">Rules of the road</span></div>
+    <div class="principles">
+      <div class="principle"><b>01</b><span>One dominant idea per frame. Don't make every point a headline.</span></div>
+      <div class="principle"><b>02</b><span>Use contrast and hierarchy before adding decoration.</span></div>
+      <div class="principle"><b>03</b><span>Signal is an accent, not a background colour for everything.</span></div>
+      <div class="principle"><b>04</b><span>Keep copy short enough to read on a phone without effort.</span></div>
+      <div class="principle"><b>05</b><span>Use grids, rules, labels and numbering to create editorial rhythm.</span></div>
+      <div class="principle"><b>06</b><span>Motion reveals information. It does not exist just to look busy.</span></div>
+      <div class="principle"><b>07</b><span>Every format carries the same identity, adapted to its job.</span></div>
+      <div class="principle"><b>08</b><span>Let the idea lead. The visual system should make it clearer.</span></div>
+    </div>
+  </section>
+  <footer class="footer"><span>AMIT 2.0 / DESIGN SYSTEM</span><span>Think clearly. Make meaning visible.</span></footer>
+</main>
+<script src="tokens/design-tokens.js"></script>
+</body>
+</html>

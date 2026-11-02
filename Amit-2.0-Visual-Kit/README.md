@@ -2,7 +2,15 @@
 
 **Direction:** Editorial Brutalism + Warm Minimalism. Thoughtful, bold, useful and human.
 
-## Design tokens
+## Live visual guide
+Open [index.html](./index.html) to inspect the palette, typography, sample social layouts and design principles.
+
+## Source files
+- [CSS design tokens](./tokens/design-tokens.css) - source of truth for colours, typography, spacing, grid, shape and motion.
+- [JavaScript token reference](./tokens/design-tokens.js) - format dimensions and reusable token metadata for HTML/JS templates.
+- [Visual guide](./index.html) - responsive browser-based style guide.
+
+## Core palette
 | Token | Hex | Role |
 |---|---|---|
 | Ink | #191919 | Primary type / dark canvas |
@@ -12,37 +20,36 @@
 | Sage | #D6DCB9 | Supporting accent |
 
 ## Typography
-- Bold editorial grotesk for display; highly legible sans-serif for body.
-- Maximum two font families per asset.
-- Consistent grid, hierarchy, margins, safe areas and signature.
+- **Space Grotesk:** display headlines and strong statements.
+- **DM Sans:** body copy, labels and utility text.
+- **Newsreader:** occasional editorial contrast.
+- Maximum three type roles; use the editorial face sparingly.
 
-## Formats
-- Reels: 1080 × 1920, 9:16, 30fps, 15-20 sec.
-- Carousels: 1080 × 1350, 4:5, seven slides by default.
-- Stories: 1080 × 1920.
+## Format standards
+- Carousels: 1080 × 1350, 4:5.
+- Reels and Stories: 1080 × 1920, 9:16.
+- Keep critical content inside safe areas. Use the format metadata in `tokens/design-tokens.js`.
 
-## Templates
-1. Kinetic statement Reel: hook → tension → insights → takeaway → CTA.
-2. Tips Reel: hook → sequential tips → summary → CTA.
-3. Mini-framework Reel: problem → model → steps → example → CTA.
-4. Educational carousel: hook, context, three insights, checklist, CTA.
-5. Framework card: problem, framework, visual model, example, exercise.
-6. Design Clinic: challenge, diagnosis, strengths, improvements, next action.
+## Design principles
+1. One dominant idea per frame.
+2. Editorial hierarchy over decoration.
+3. Signal is emphasis, not wallpaper.
+4. Copy must be readable on a phone.
+5. Grids, rules, labels and numbering create rhythm.
+6. Motion reveals meaning, not decoration.
+7. Every format shares the same identity, adapted to its job.
+
+## Content patterns
+- Statement cover: one strong claim.
+- Editorial contrast: dark canvas for tension or reflection.
+- Framework card: Sage for models, steps and exercises.
+- Field note: small labels, numbering and concise observations.
 
 ## Motion language
-- Typographic entrances/exits, staggered reveals, restrained movement.
-- Adequate readable dwell time; understandable without sound.
+- Typographic entrances/exits and staggered reveals.
+- Readable dwell time; understandable without sound.
 - Avoid gratuitous particles and excessive bounce.
-- Use licensed/original media only.
+- Respect reduced-motion preferences.
 
 ## Quality gate
-Hierarchy, contrast, safe areas, spelling, source accuracy, phone-size legibility, signature and export quality. Two revision cycles maximum.
-
-## Folder map
-- `tokens/` design tokens
-- `templates/reels/` motion templates
-- `templates/carousels/` slide templates
-- `references/` references and rationale
-- `exports/` export guidance
-
-First sprint: formalise tokens, create carousel master and three Reel variants.
+Check hierarchy, contrast, safe areas, spelling, source accuracy, phone-size legibility, signature and export quality before publishing.
